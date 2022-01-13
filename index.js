@@ -23,7 +23,6 @@ if (flag) {
             const $ = cheerio.load(html)
 
             $('.card ').each((i, el) => {
-                value += 1
                 const source = 'mtv'
 
                 const title = $(el)
@@ -52,7 +51,6 @@ if (flag) {
             $('.l-river__item').each((i, el) => {
                 const source = 'rollingstone'
 
-                value += 1
                 const title = $(el)
                     .find('.c-card__heading')
                     .text();
@@ -79,7 +77,6 @@ if (flag) {
 
             $('.a-story-grid').each((i, el) => {
                 const source = 'billboard'
-                value += 1
                 const title = $(el)
                     .find('.c-title.a-font-primary-l.lrv-u-display-block.lrv-u-margin-b-125')
                     .text();
